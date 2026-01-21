@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS metrics (
+    id SERIAL PRIMARY KEY,
+    cpu_usage NUMERIC(5,2) NOT NULL,
+    memory_usage NUMERIC(5,2) NOT NULL,
+    load_avg NUMERIC(5,2) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

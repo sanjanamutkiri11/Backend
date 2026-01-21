@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS system_state (
+    id SERIAL PRIMARY KEY,
+    server_count INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
